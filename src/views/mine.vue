@@ -30,7 +30,7 @@
 
 
 <script>
-import { getmyarticle,delsend } from '@/api/user'
+import { getmyarticle,delsend,info } from '@/api/user'
 import { mapState } from 'vuex'
 export default {
     name:'mine',
@@ -42,13 +42,24 @@ export default {
         }
     },
     computed:{
-        ...mapState(['uid','publish_num'])
+        ...mapState(['uid','publish_num','token'])
     },
     created(){
         this.getmyarticle()
+        this.getinfo()
     },
     methods:{
         // 获取我的发布
+        getinfo(){
+            let {token}=this
+            info({
+                token
+            }).then(res=>{
+                console.log(res)
+            }).catch(err=>{
+
+            })
+        },
         getmyarticle(){
             let {uid,skip,limit,index}=this
             getmyarticle({

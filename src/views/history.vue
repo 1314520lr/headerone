@@ -6,7 +6,7 @@
      <li v-for="item in historylist" :key="item._id" class="searchli">
             <p class="p1">{{item.title}}</p>
             <div :class="{none:item.poster_type ==1,articlesingleImg:item.poster_type ==2,articlemoreImg:item.poster_type ==3}">
-                 <img class="imgss" :src="imageSrc" v-for="imageSrc in item.imageSrc" :key="imageSrc" alt=""></img>
+                 <img class="imgss" :src="imageSrc" v-for="imageSrc in item.imageSrc" :key="imageSrc" alt="">
             </div>
             <p class="pt">{{item.time|dateFormat}}</p>
         </li>

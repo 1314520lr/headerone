@@ -67,7 +67,7 @@ methods: {
                 // this.$store.commit('save',['tokenExpired',tokenExpired])
             
             setTimeout((v) => {
-                this.$router.back()
+                this.$router.push('/my')
             }, 800);
 
             
