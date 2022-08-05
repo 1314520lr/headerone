@@ -20,7 +20,7 @@
 <!-- 注册 -->
   <div style="margin: 16px;">
     <van-button style="background-color: skyblue;" round block type="info" @click="submit">完成</van-button>
-  </div>W
+  </div>
 </van-form>
 
   </div>
