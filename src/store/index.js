@@ -16,8 +16,6 @@ export default new Vuex.Store({
     publish_num:0
   },
   getters: {    //  vuex里的计算属性
-
-  
   },
   // 改数据  方法
   mutations: {

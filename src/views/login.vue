@@ -55,7 +55,6 @@ methods: {
                 localStorage.setItem("token", token);
                 localStorage.setItem("uid", uid);
                 localStorage.setItem('tokenExpired',tokenExpired)
-                // 用户信息
                 localStorage.setItem('userInfo', JSON.stringify(userInfo));
 
                 this.$store.dispatch('info',token)
